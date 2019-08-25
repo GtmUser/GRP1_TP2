@@ -1,0 +1,148 @@
+/*fond*/
+body {
+	background-image: url("images/background.jpg");
+    background-size: cover;                    
+    background-repeat:   no-repeat;
+    background-position: center center;
+	background-attachment: fixed;
+	   
+}
+
+/*logo proxibanque*/
+div.logo {
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	text-align: center;
+}
+
+div.logo img {
+	vertical-align: middle;
+	width: 105px;
+	height: 105px;
+}
+
+div.logo span {
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	vertical-align: middle;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/*Fenetre d'authentification*/
+div.fenetre {
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	min-height: 280px;
+}
+
+div.fenetre img {
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+}
+
+div.fenetre input {
+	color: grey;
+	font-size: 20px;
+	vertical-align: middle;
+	border-radius: 15px;
+	padding: 10px 15px;
+	width: 15%;
+	min-width: 150px;
+	margin: 15px 10px 15px 10px;
+	box-sizing: border-box;
+	border: none;
+}
+
+div.fenetre input[title="connexion"] {
+	font-weight: bold;
+	width: 15%;
+	min-width: 150px;
+	margin: 40px 0px 0px 60px;
+	background-color: #3CBC8D;
+    color: white;
+}
+
+div.fenetre input:hover {
+  background-color: rgb(206, 206, 206);	
+}
+
+div.fenetre input:focus {
+	color: #3CBC8D;
+}
+
+mdp {
+
+}
+
+mdp button{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	font-style: italic;
+	margin: 40px 0px 0px 60px;
+	border: none;
+	background-color: #11ffee00;
+}
+
+/*Pour l'index de bienvenue*/
+a {
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+
+/*Bandeau*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  border-left:1px solid #bbb;
+}
+
+li:last-child {
+  border-left: none;
+}
+
+li button {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  background-color: #333;
+  border: none;
+}
+
+li button:hover:not(.active) {
+  background-color: #111;
+}
+
+p {
+	position: absolute;
+	bottom: 10%;
+	right: 1%;
+	width: 100%;
+	text-align: right;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+

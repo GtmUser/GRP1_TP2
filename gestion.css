@@ -1,0 +1,335 @@
+/*fond*/
+body {
+	background-image: url("images/background.jpg");
+    background-size: cover;                    
+    background-repeat:   no-repeat;
+    background-position: center center;
+	background-attachment: fixed;   
+}
+
+
+/*logo proxibanque*/
+div.logo {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	text-align: left;
+}
+
+div.logo img {
+	vertical-align: middle;
+	width: 80px;
+	height: 80px;
+}
+
+div.logo span {
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+/*Titre de chaque page*/
+div.titre {
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	text-align: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+/*tableau de la liste des clients*/
+div.fenetreauth {
+	position: absolute;
+	top: 200px;
+	left:25%;
+	width: 50%;
+	text-align: center;
+	min-height: 280px;
+	border: none;
+}
+
+div.fenetreauth input[title="bouton"]{
+	background-color: #4CAF50; /* Green */
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	cursor: pointer;
+  	-webkit-transition-duration: 0.4s; /* Safari */
+  	transition-duration: 0.4s;
+  	vertical-align: middle;
+	
+}
+
+div.fenetreauth input[title="bouton"]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*tableau de modication du client*/
+div.fenetremodif {
+	position: absolute;
+	top: 200px;
+	width: 80%;*/
+	right: 10%;
+	left: 10%;
+	text-align: center;
+	border: none;
+	vertical-align: middle;
+}
+
+div.fenetremodif input[title="bouton"]{
+	background-color: #4CAF50; /* Green */
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	cursor: pointer;
+  	-webkit-transition-duration: 0.4s; /* Safari */
+  	transition-duration: 0.4s;
+  	vertical-align: middle;
+	
+}
+
+div.fenetremodif input[title="bouton"]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/*tableau des comptes d'un client*/
+div.fenetrecompte {
+	position: absolute;
+	top: 200px;
+	left: 10%;
+	width: 80%;
+	text-align: center;
+	min-height: 280px;
+	border: none;
+	vertical-align: middle;
+}
+
+
+/*Pour la servlet de confirmation de virement*/
+div.fenetreconfirvir {
+	position: absolute;
+	top: 200px;
+	left: 10%;
+	width: 80%;
+	text-align: center;
+	min-height: 280px;
+	border: none;
+	vertical-align: middle;
+	
+}
+
+/*tableau des virements*/
+div.fenetrevirement {
+	position: absolute;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: rgba(0,0,0,0.2);
+	top: 100px;
+	left: 30%;
+	width: 40%;
+	min-width: 600px;
+	text-align: center;
+	min-height: 400px;
+	vertical-align: middle;
+	border: none;
+}
+
+div.fenetrevirement formulaire{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+div.fenetrevirement input {
+	color: grey;
+	font-size: 20px;
+	vertical-align: middle;
+	border-radius: 15px;
+	padding: 10px 15px;
+	width: 15%;
+	min-width: 150px;
+	margin: 15px 10px 15px 10px;
+	box-sizing: border-box;
+	border: none;
+}
+
+div.fenetrevirement input[title='executer'] {
+	font-weight: bold;
+	background-color: #3CBC8D;
+    color: white;
+}
+
+
+/*Style general pour les tableaux*/
+table {
+	width: 100%;
+	border: none;
+	color: black;
+	font-size: 15px;
+	text-align: center;
+}
+
+th,td {
+	padding: 20px;
+}
+
+th {
+	background-color: #2a5e74;
+	font-size: 20px;
+	color: white;
+}
+
+tr:nth-child(even) {
+	background-color: #89d0d3;
+}
+
+tr:nth-child(odd) {
+	background-color: #708f91;
+}
+
+
+/*Style particulier pour la liste de client dans la servlet authentification*/
+div.fenetreauth tr:hover {
+	background-color: #f5f5f5;
+}
+
+/*Style particulier pour la servlet Operation_bancaire*/
+div.fenetrevirement th {
+	background-color: #11ffee00;
+	font-weight: bold;
+}
+
+div.fenetrevirement tr {
+	background-color: #11ffee00;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* Style pour le bouton retour à la liste des clients*/
+div.accueil{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+div.accueil input[title="accueil"]{
+	background-color: red;
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	vertical-align: middle;
+}
+
+/* Style pour le bouton effectuer un autre virement dans la servlet Confirmation_virement*/
+div.autrevirement{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+div.autrevirement input[title="boutonautvir"]{
+	background-color: blue;
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	vertical-align: middle;
+}
+
+
+
+/* Pour les boutons du virement. Inspiré de w3school mais adapté au projet */
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  /*padding-top: 0px;
+  padding-left: 15px; 
+  padding-right: 15px;
+  padding-bottom: 15px;*/
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: -10px;
+  left: 40%;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
